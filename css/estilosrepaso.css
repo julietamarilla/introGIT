@@ -109,8 +109,8 @@ main {
 
 .texto {
     position: absolute;
-    bottom:50px;
-    right:50px;
+    bottom: 50px;
+    right: 50px;
     background-color: hotpink;
     padding: 5px;
 }
@@ -128,7 +128,7 @@ main {
 }
 
 #descript {
-    height: 150px;
+    height: 250px;
     width: 100%;
     background-color: rgb(250, 192, 255);
 
@@ -141,6 +141,45 @@ main {
         color: bisque;
         font-size: 14px;
         overflow: hidden;
+
+    }
+}
+
+.position_abs {
+    position: absolute;
+}
+
+.position_rel {
+    position: relative;
+}
+
+.blanco {
+    background-color: azure;
+}
+
+.parrafito {
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(210, 135, 224);
+
+    & span {
+        position: absolute;
+        font-size: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        top: -5px;
+        left: -10px;
+    }
+
+    & span:nth-child(2) {
+        color: rgb(226, 43, 211);
+        bottom: -20px !important;
+        right: -20px !important;
+        top: 80%;
+        left: 90%;
     }
 }
 

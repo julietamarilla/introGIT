@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 :root {
@@ -169,24 +170,55 @@ main {
         position: absolute;
         font-size: 100px;
         font-family: Arial, Helvetica, sans-serif;
-        color: grey;
-        top: -5px;
-        left: -10px;
+        color: rgb(222, 19, 230);
+        top: -38px;
+        left: -32px;
     }
 
     & span:nth-child(2) {
         color: rgb(226, 43, 211);
         bottom: -20px !important;
         right: -20px !important;
-        top: 80%;
-        left: 90%;
+        top: 76%;
+        left: 84%;
     }
 }
 
 #article {
-    height: 300px;
+    height: 400px;
     width: 100%;
     background-color: rgb(238, 205, 144);
+}
+
+.producto {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(202, 207, 130);
+    padding: 10px;
+
+    & .img_producto {
+        height: 50%;
+        width: 100%;
+        background-color: rgb(169, 204, 89);
+    }
+}
+
+.btn {
+    border: solid 1px rgb(78, 221, 50);
+    background-color: transparent;
+    box-shadow: 0 0 15px 0 black;
+    width: 100%;
+    padding: 5px 5px;
+}
+
+.btn:hover {
+    background-color: rgb(48, 219, 139);
+    box-shadow: 0 5px 15px 0 black;
+}
+
+.btn:active {
+    background-color: rgb(202, 235, 17);
+    box-shadow: 0 5px 15px 0 black;
 }
 
 #nosotros {

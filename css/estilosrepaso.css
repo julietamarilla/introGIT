@@ -17,9 +17,21 @@
     display: flex;
 }
 
+.columna{
+    flex-direction: column;
+}
+
+.separar{
+    justify-content: space-between;
+}
+
 .centrar {
     justify-content: center;
     align-items: center;
+}
+
+.h50{
+    height: 50%;
 }
 
 
@@ -112,7 +124,7 @@ main {
     position: absolute;
     bottom: 50px;
     right: 50px;
-    background-color: hotpink;
+    background-color: rgb(121, 224, 181);
     padding: 5px;
 }
 
@@ -137,8 +149,8 @@ main {
     & .ancho50 {
         width: 50%;
         height: 100%;
-        background-color: blueviolet;
-        border: dotted 2px red;
+        background-color: rgb(172, 214, 117);
+        border: dotted 2px rgb(113, 196, 102);
         color: bisque;
         font-size: 14px;
         overflow: hidden;
@@ -164,19 +176,19 @@ main {
     height: 80%;
     right: 10px;
     bottom: 10px;
-    background-color: rgb(210, 135, 224);
+    background-color: rgb(58, 173, 106);
 
     & span {
         position: absolute;
         font-size: 100px;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(222, 19, 230);
+        color: rgb(230, 132, 19);
         top: -38px;
         left: -32px;
     }
 
     & span:nth-child(2) {
-        color: rgb(226, 43, 211);
+        color: rgb(223, 137, 24);
         bottom: -20px !important;
         right: -20px !important;
         top: 76%;
@@ -193,7 +205,6 @@ main {
 .producto {
     width: 25%;
     height: 100%;
-    background-color: rgb(202, 207, 130);
     padding: 10px;
 
     & .img_producto {
@@ -201,6 +212,18 @@ main {
         width: 100%;
         background-color: rgb(169, 204, 89);
     }
+}
+
+.producto:nth-of-type(2){
+    background-color: rgb(142, 221, 168);
+}
+
+.producto:nth-of-type(3){
+    background-color: rgb(238, 205, 144);;
+}
+
+.producto:nth-of-type(4){
+    background-color: rgb(142, 221, 168);
 }
 
 .btn {

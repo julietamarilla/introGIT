@@ -256,15 +256,17 @@ main {
 }
 
 .staff {
-    height: 100%;
-    flex-grow: 0;
-    /*es la capasadidad del elementos hijos de agrandarse si es necesario*/
-    flex-shrink: 0;
-    /*es la xapacidad del elemento hijo de achicarse si es necesario */
-    flex-basis: 200px;
-    /*establece un ancho minimo al elemento hijo*/
+    height: 90%;
+    flex-grow: 0; /*es la capasadidad del elementos hijos de agrandarse si es necesario*/
+    flex-shrink: 0; /*es la xapacidad del elemento hijo de achicarse si es necesario */
+    flex-basis: 200px; /*establece un ancho minimo al elemento hijo*/
     flex: 1 0 200px;
     background-color: lightgreen;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
     & .foto-redonda {
         height: 100px;
@@ -276,6 +278,10 @@ main {
             height: 100%;
             object-fit: cover;
         }
+    }
+    p {
+        text-align: center;
+        text-wrap: balance;
     }
 }
 

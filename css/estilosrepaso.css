@@ -248,7 +248,7 @@ main {
 #nosotros {
     height: 300px;
     width: 100%;
-    background-color: rgb(221, 230, 173);
+    background: linear-gradient(180deg, rgb(121, 221, 121) 0%, rgb(111, 219, 169)50%);
     display: flex;
     gap: 5px;
     justify-content: space-evenly;
@@ -261,7 +261,6 @@ main {
     flex-shrink: 0; /*es la xapacidad del elemento hijo de achicarse si es necesario */
     flex-basis: 200px; /*establece un ancho minimo al elemento hijo*/
     flex: 1 0 200px;
-    background-color: lightgreen;
 
     display: flex;
     flex-direction: column;

@@ -266,13 +266,13 @@ main {
     flex: 1 0 200px;
     background-color: lightgreen;
 
-    .foto-redonda {
+    & .foto-redonda {
         height: 100px;
         width: 100px;
         border-radius: 50%;
         overflow: hidden;
 
-        img {
+        & img {
             height: 100%;
             object-fit: cover;
         }

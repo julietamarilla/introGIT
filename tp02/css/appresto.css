@@ -67,13 +67,36 @@ header {
             width: 90%;
             background-color: white;
             box-shadow: 0 0 10px 0 rgb(226, 219, 219);
+
+            .cuadrado{
+                height: 40px;
+                width: 40px;
+                background-color: var(--main-color);
+                color: white;
+                display: grid;
+                place-items: center;
+            }
+
+            .btn{
+                height: 40px;
+                width: 40px;
+                color: var(--gris-txt);
+                border: none;
+                display: grid;
+                place-items: center;
+            }
+            & input[type=search]{
+                width: calc(100% - 80px);
+                border: 0;
+                padding-left: 15px;
+            }
         }
     }
 
     & .categoria {
         height: 30%;
         width: 100%;
-        background-color: rgb(255, 0, 200);
+        background-color: rgb(253, 253, 253);
         padding: 20px;
         padding-top: 30px;
         display: flex;
@@ -107,4 +130,8 @@ main {
 
 .sombra{
     box-shadow:  0 0 10px -5px rgba(0, 0, 0, 0.6);
+}
+
+.flex{
+    display: flex;
 }

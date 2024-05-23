@@ -1,0 +1,101 @@
+/* fallback */
+@font-face {
+  font-family: Adihaus;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/adihausdin_regular.otf);
+}
+
+@font-face {
+  font-family: AdihausBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/adihausdin_bold.otf);
+}
+
+.adihaus {
+  font-family: Adihaus;
+}
+
+.adihausbold {
+  font-family: AdihausBold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+ 
+
+  .adihausbold {
+    font-family: AdihausBold;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  display: grid;
+  place-items: center;
+  
+  .adihaus{
+  font-family: Adihaus;
+  }
+}
+
+.producto {
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  /*da sombra*/
+  box-shadow: 0 0 15px rgb(143, 143, 148);
+  position: relative;
+
+  .logo {
+    position: absolute;
+    right: 5px;
+  }
+
+  .precio {
+    position: absolute;
+    left: 8px;
+    top: 185px;
+    background-color: rgb(203, 213, 219);
+  }
+
+  .header_prod {
+    border-radius: 5px 5px 0 0;
+    width: 50%;
+  }
+}
+
+.main_prod {
+  height: calc(100% - 40px);
+  width: 100%;
+
+  .imagen_prod {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+
+  }
+
+  .desc_prod {
+    height: 40%;
+    width: 100%;
+    background-color: rgb(255, 252, 252);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+}

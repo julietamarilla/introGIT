@@ -25,14 +25,14 @@ body {
 }
 
 /*------------COLORES--------------*/
-:root{
+:root {
     --main-txt: black;
     --gris-txt: gray;
-    --main-bg:#6200ee;
-    --main-color:#3700b3;
-    --secondary-color:#bb86f6;
+    --main-bg: #6200ee;
+    --main-color: #3700b3;
+    --secondary-color: #bb86f6;
 
-    
+
 }
 
 
@@ -55,7 +55,7 @@ header {
             bottom: 60px;
             height: 60px;
             width: 80%;
-            background-color: aliceblue;
+            background-color: rgb(255, 255, 255);
             width: 90%;
         }
 
@@ -68,7 +68,7 @@ header {
             background-color: white;
             box-shadow: 0 0 10px 0 rgb(226, 219, 219);
 
-            .cuadrado{
+            .cuadrado {
                 height: 40px;
                 width: 40px;
                 background-color: var(--main-color);
@@ -77,7 +77,7 @@ header {
                 place-items: center;
             }
 
-            .btn{
+            .btn {
                 height: 40px;
                 width: 40px;
                 color: var(--gris-txt);
@@ -85,7 +85,8 @@ header {
                 display: grid;
                 place-items: center;
             }
-            & input[type=search]{
+
+            & input[type=search] {
                 width: calc(100% - 80px);
                 border: 0;
                 padding-left: 15px;
@@ -116,22 +117,79 @@ header {
             transition: all 200ms ease-in-out;
         }
 
-        & .itemcat:hover{
+        & .itemcat:hover {
             transform: scale(1.1);
         }
     }
 }
 
 main {
-    height: 40%;
+  
     width: 100%;
-    background-color: rgb(220, 149, 241);
+    background-color: rgb(211, 112, 194);
+    padding: 20px;
+  
+
+    .resultados{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
-.sombra{
-    box-shadow:  0 0 10px -5px rgba(0, 0, 0, 0.6);
+.item-resto{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(170, 112, 36, 0.644);
+    position: relative;
+
+    .item-foto{
+        height: 150px;
+        width: 40%;
+        position: absolute;
+        background-image: url(../img/oko-restaurant.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item-desc{
+        height: 150px;
+        width: 65%;
+        background-color: rgba(233, 233, 233, 0.856);
+        position: absolute;
+        right: 0;
+        border-radius: 0 0 0 20px;
+        padding: 20px;
+        color: rgb(116, 115, 115);
+    }
+
+    .item-rate{
+        position: absolute;
+        font-size: 16pt;
+        font-weight: bold;
+        color: white;
+        background-color: #bb86fc;
+        padding: 8px;
+        border-radius:14px 0;
+        right: -8px;
+        top:-8px;
+
+    }
 }
 
-.flex{
+.spbt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna{
+    flex-direction: column;
+}
+
+.sombra {
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.6);
+}
+
+.flex {
     display: flex;
 }

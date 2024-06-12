@@ -2,12 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
 }
 
 body {
     height: 100vh;
     width: 100%;
-    background-color: rgb(236, 140, 220);
+    background-color: rgb(182, 219, 191);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -21,7 +24,7 @@ body {
 }
 
 .fs22 {
-    font-size: 22;
+    font-size: 22pt;
 }
 
 /*------------COLORES--------------*/
@@ -31,22 +34,49 @@ body {
     --main-bg: #6200ee;
     --main-color: #3700b3;
     --secondary-color: #bb86f6;
+<<<<<<< HEAD
 
 
 }
 
+.fit {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
+.degrade {
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.pa {
+    position: absolute;
+}
+
+.pr {
+    position: relative;
+=======
+
+
+>>>>>>> d95ee6d837078874d860d6e67b5a98e44a94c3dc
+}
+
+
+.centrar_V{
+    align-items: center;
+}
 
 
 header {
     height: 60%;
     width: 100%;
-    background-color: rgb(224, 100, 197);
+    background-color: rgb(159, 230, 162);
 
     & .portadaResto {
         height: 70%;
         width: 100%;
         background-color: var(--main-bg);
+        background-image: url(../img/oko-restaurant.jpg);
         position: relative;
 
         & .textBienvenida {
@@ -54,9 +84,13 @@ header {
             left: 5%;
             bottom: 60px;
             height: 60px;
+<<<<<<< HEAD
+=======
             width: 80%;
             background-color: rgb(255, 255, 255);
+>>>>>>> d95ee6d837078874d860d6e67b5a98e44a94c3dc
             width: 90%;
+            background-color: aliceblue;
         }
 
         & .buscador {
@@ -108,12 +142,11 @@ header {
 
             width: 80px;
             text-decoration: none;
-            font-size: 18pt;
+            font-size: 14pt;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             transition: all 200ms ease-in-out;
         }
 
@@ -126,9 +159,14 @@ header {
 main {
   
     width: 100%;
+<<<<<<< HEAD
+    background-color: rgb(156, 177, 206);
+    padding: 20px;
+=======
     background-color: rgb(211, 112, 194);
     padding: 20px;
   
+>>>>>>> d95ee6d837078874d860d6e67b5a98e44a94c3dc
 
     .resultados{
         display: flex;
@@ -137,6 +175,17 @@ main {
     }
 }
 
+<<<<<<< HEAD
+.item-resto {
+    width: 100%;
+    height: 150px;
+    background-color: yellow;
+    position: relative;
+
+    .item-foto {
+        height: 150px;
+        width: 40%;
+=======
 .item-resto{
     width: 100%;
     height: 150px;
@@ -147,6 +196,7 @@ main {
         height: 150px;
         width: 40%;
         position: absolute;
+>>>>>>> d95ee6d837078874d860d6e67b5a98e44a94c3dc
         background-image: url(../img/oko-restaurant.jpg);
         background-position: center;
         background-size: cover;
@@ -155,12 +205,20 @@ main {
     .item-desc{
         height: 150px;
         width: 65%;
+<<<<<<< HEAD
+        background-color: white;
+        position: absolute;
+        right: 0;
+        border-radius: 0 0 0 23px;
+        padding: 20px;     
+=======
         background-color: rgba(233, 233, 233, 0.856);
         position: absolute;
         right: 0;
         border-radius: 0 0 0 20px;
         padding: 20px;
         color: rgb(116, 115, 115);
+>>>>>>> d95ee6d837078874d860d6e67b5a98e44a94c3dc
     }
 
     .item-rate{
@@ -168,6 +226,35 @@ main {
         font-size: 16pt;
         font-weight: bold;
         color: white;
+<<<<<<< HEAD
+        background-color: aliceblue;
+        padding: 8px;
+        border-radius: 14px 0;
+        right: -8px;
+        top:-8px;
+    }
+}
+
+.spbt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spa {
+    display: flex;
+    justify-content: space-around;
+}
+
+.columna {
+    flex-direction: column;
+}
+
+.sombra {
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.6);
+}
+
+.flex {
+=======
         background-color: #bb86fc;
         padding: 8px;
         border-radius:14px 0;
@@ -178,10 +265,125 @@ main {
 }
 
 .spbt{
+>>>>>>> d95ee6d837078874d860d6e67b5a98e44a94c3dc
     display: flex;
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
+/*gap sirve para dar espacio entre elementos con px*/
+
+
+/*-----------RESTO HTML------------*/
+.nav {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    /*para que quede fijo*/
+    bottom: 0;
+    background-color: rgb(118, 202, 136);
+   
+
+    .btn-link{
+        height: 100%;
+        flex: 1;
+        text-align: center; 
+        padding: 20px;
+    }
+    .active{
+        border-top: solid 3px var(--main-color);
+        font-weight: bold;
+    }
+}
+
+#portada_resto {
+    height: calc(100% - 60px);
+    background-color: rgb(255, 255, 255);
+    
+
+    .rate {
+        position: absolute;
+        font-size: 16pt;
+        font-weight: bold;
+        color: white;
+        background-color: var(--secondary-color);
+        padding: 8px;
+        border-radius: 14px 0;
+        right: 15px;
+      bottom: -20px;
+    }
+
+    .imagen_resto {
+        background-color: #c198f0;
+        height: 45%;
+        position: relative;
+
+
+    }
+
+    .desc_resto {
+        height: 55%;
+        background-color: white;
+        padding: 20px;
+        padding-top: 30px;
+
+        .tit_resto {
+            color: var(--gris-txt);
+
+        }
+    }
+}
+
+
+/*------------menu.html--------------*/
+
+#tit_menu{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.cerrar{
+    position: absolute;
+    left: 20px;
+}
+
+.lista_menu{
+    height: calc(100% - 120px);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: bisque;
+}
+
+.item_menu{
+    background-color: antiquewhite;
+    height: 80px;
+    display: flex;
+
+    .foto-item{
+        height: 80px;
+        width: 80px;
+    }
+
+    .desc-item{
+        padding: 10px;
+    }
+
+    .precio-item{
+        position: absolute;
+        right: -10px;
+        bottom: 10px;
+        padding: 3px 10px; 
+        border-radius: 10px 0;
+        background-color: #3700b3;
+        color:white;
+        font-size: 8pt;
+    }
+=======
 .columna{
     flex-direction: column;
 }
@@ -192,4 +394,5 @@ main {
 
 .flex {
     display: flex;
+>>>>>>> d95ee6d837078874d860d6e67b5a98e44a94c3dc
 }
